@@ -54,3 +54,10 @@ $results = ($n%2 == 0) ? "A" : (($n == 11) ? "B" : "C" );
 
 // echo $results;
 echo PHP_EOL;
+
+// Factorial Number
+$number = 3;
+for($i = $number, $factorial = 1 ; $i>1; $i--){
+    $factorial = $factorial * $i;
+}
+echo $factorial;
