@@ -55,9 +55,32 @@ $results = ($n%2 == 0) ? "A" : (($n == 11) ? "B" : "C" );
 // echo $results;
 echo PHP_EOL;
 
-// Factorial Number
-$number = 3;
+// Factorial Number using for loop
+$number = 6;
 for($i = $number, $factorial = 1 ; $i>1; $i--){
     $factorial = $factorial * $i;
 }
-echo $factorial;
+echo "[Using for loop] Factorial of {$number} is {$factorial}";
+
+echo PHP_EOL;
+// Factorial Number using do-while loop
+
+$number = 6;
+$i = $number;
+$factorial = 1;
+do{
+    $factorial = $factorial * $i;
+    $i--;
+}while($i>1);
+printf("[Using do-while loop] Factorial of %d is %d", $number, $factorial);
+echo PHP_EOL;
+
+// Factorial Number using while loop
+$number = 6;
+$i = $number;
+$factorial = 1;
+while($i>1){
+    $factorial = $factorial * $i;
+    $i--;
+}
+printf("[Using while loop] Factorial of %d is %d", $number, $factorial);
