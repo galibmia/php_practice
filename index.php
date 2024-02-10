@@ -84,3 +84,22 @@ while($i>1){
     $i--;
 }
 printf("[Using while loop] Factorial of %d is %d", $number, $factorial);
+
+echo PHP_EOL;
+
+
+$veryOld = 0;
+$old = 1;
+$new = 1;
+$n = 5;
+
+for($i = 0; $i<=$n; $i++){
+    if($i== $n){
+        echo $veryOld;
+        }
+    $old = $new;
+    $new = $old + $veryOld;
+    $veryOld = $old;
+}
+
+
