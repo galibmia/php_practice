@@ -91,15 +91,29 @@ echo PHP_EOL;
 $veryOld = 0;
 $old = 1;
 $new = 1;
-$n = 5;
+$n = 10;
 
 for($i = 0; $i<=$n; $i++){
     if($i== $n){
-        echo $veryOld;
+        echo "Fibonacci of {$n}th number is ".$veryOld;
         }
     $old = $new;
     $new = $old + $veryOld;
     $veryOld = $old;
 }
 
+echo PHP_EOL;
+// Spaceship Operator
 
+$x = 6;
+$y = 7;
+
+$results = $x<=>$y;
+
+if($results >=1){
+    echo "X is Big";
+}elseif($results ==0){
+    echo "X is equal to Y";
+}elseif($results <=-1){
+    echo "Y is Big";
+}
