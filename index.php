@@ -129,8 +129,8 @@ echo $number;
 
 
 echo PHP_EOL;
-// Fibonacci using recursive Function
 
+// Fibonacci using recursive Function
 function fibonacci($number){
     static $old = 0;
     static $new = 1;
@@ -146,10 +146,20 @@ function fibonacci($number){
     
     $start++;
     fibonacci($number);
-    
-    
-
 }
 
 $number = 10;
 fibonacci($number);
+echo PHP_EOL;
+
+// Factorial using recursive Function
+
+function factorial(int $n){
+    if($n==1){
+        return 1;
+    }
+    return $n * factorial($n-1);
+}
+$number = 5;
+$result = factorial($number);
+echo "The Factorial of {$number} is {$result}.";
