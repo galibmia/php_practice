@@ -117,3 +117,39 @@ if($results >=1){
 }elseif($results <=-1){
     echo "Y is Big";
 }
+
+echo PHP_EOL;
+// Null coalescing operator
+
+$default_n = 5;
+$n;
+
+$number = $n ?? $default_n;
+echo $number;
+
+
+echo PHP_EOL;
+// Fibonacci using recursive Function
+
+function fibonacci($number){
+    static $old = 0;
+    static $new = 1;
+    static $start = 0;
+    $start = $start ?? 1;
+    if($start==$number){
+        echo "The {$number}th Fibonacci Number is {$old}.";
+        return;
+    }
+    $_temp = $old + $new;
+    $old = $new;
+    $new = $_temp;
+    
+    $start++;
+    fibonacci($number);
+    
+    
+
+}
+
+$number = 10;
+fibonacci($number);
