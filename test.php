@@ -43,6 +43,27 @@ $trimmedString = rtrim($sampleString);
 // echo $trimmedString;
 // echo "Data";
 
+/**PHP String Word Wrap:
+ * wordwrap( string $str [, int $width = 75 [, string $break = " " [, bool $cut ]]]);
+ * 
+ * 
+ * */ 
+
+
+$sampleWord = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero maiores in iure, sequi, quos ullam sed odio quod totam debitis id distinctio incidunt quae adipisci perferendis labore voluptates. Quis ut quidem eum? Saepe nihil possimus rerum repellat quas aliquid?";
+
+// $wrappedWord = wordwrap($sampleWord, 26);
+$wrappedWord = wordwrap($sampleWord, 26, "\n", true);
+
+// echo $wrappedWord;
+
+$data = "Galib Mia engr.galibmia@gmail.com";
+
+$newData = sscanf($data, "%s %s %s");
+print_r($newData);
+sscanf($data, "%s %s %s", $fname, $lname, $email);
+
+
 
 
 ?>
