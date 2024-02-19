@@ -71,9 +71,9 @@ if('decode' == $task){
                 <h1>Data Scramble</h1>
                 <p>Use this application to scramble your data.</p>
                 <p>
-                    <a href="scrambling.php?task=encode">Encode</a> |
-                    <a href="scrambling.php?task=decode">Decode</a> |
-                    <a href="scrambling.php?task=key">Generate key</a>
+                    <a href="index.php?task=encode">Encode</a> |
+                    <a href="index.php?task=decode">Decode</a> |
+                    <a href="index.php?task=key">Generate key</a>
                 </p>
             </div>
         </div>

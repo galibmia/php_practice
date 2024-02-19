@@ -1,6 +1,6 @@
 <?php
 
-$fileName = "C:\Projects\php\php_practice/file.txt";
+$fileName = "C:\Projects\php\php_practice/file/file.txt";
 
 if (is_readable($fileName)) {
     $fp = fopen($fileName, 'r');
